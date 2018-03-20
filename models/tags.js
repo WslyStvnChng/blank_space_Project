@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Post = sequelize.define("Post", {
+  var Tag = sequelize.define("Tag", {
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -12,19 +12,22 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       len: [1]
     },
-    nsfw: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false
+    link: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        len: [1]
+      }
     }
   });
 
   Post.associate = function(models) {
     Post.belongsTo(models.User, {
       foreignKey: {
-        allowNull: false
+        allowNull: true
       }
     });
   };
+
   return Post;
 };
