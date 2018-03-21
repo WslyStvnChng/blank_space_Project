@@ -1,0 +1,90 @@
+
+/*age verification css*/
+#verify {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(128, 128, 128, 0.9);
+        z-index: 200;
+        width: 100%;
+        height: 100%;
+        font-family: 'Share Tech', sans-serif;
+    }
+    #verify .age {
+        width: 700px;
+        height: 500px;
+        margin: 10% auto 0;
+        padding: 15px;
+        background: black;
+        border-radius: 5px;
+    }
+    #verify .age h2 {
+        margin-bottom: 15px;
+    }
+    #verify .age input[type=submit] {
+        color: #000000;
+    }
+    #verify .denied {
+        display: none;
+        padding-top: 15px;
+        color: #ffa000;
+    }
+
+    #verify h2{
+      font-family: font-family: 'Share Tech', sans-serif;
+      font-size: 25px;
+      color: #ffa000;
+    }
+    /*css for the rest of body:*/
+    body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+body {
+background-color: darkorange;
+font-family:'Share Tech', sans-serif;
+font-size: 20px;
+  /*no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;*/
+}
+
+.navbar-brand, .nav-link{
+  font-family: 'Share Tech', sans-serif;
+  font-size: 20px;
+}
+
+.logo{
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+  color:#ffffff;
+  text-align: center;
+  display: block;
+
+}
+
+a:hover {
+    background-color: none;
+    color: purple;
+}
+
+
+.textContainer{
+display: block;
+    background: rgba(200, 200, 200, 0.6);
+    padding: 10px;
+border: 2px solid lightgrey;
+   /*margin:0 auto;*/
+}
+
+body #results{
+  background-color: green;
+}
