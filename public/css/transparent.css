@@ -1,8 +1,10 @@
 h1 {
    color: red; 
 }
-
-#Image {
+#image-wrapper{
+    position: relative;
+}
+/*#Image {
     background-image: url(https://i.imgur.com/qIH8fTw.jpg);
     background-size: contain;
     background-position: center center;
@@ -10,16 +12,25 @@ h1 {
     width: 450px;
     height: 350px;
     position: relative;
+}*/
+
+#image-background{
+    width: 80%;
+    height: 60%;
 }
-#Image a {
+#image-grid a {
+    position: absolute;
     border:1px solid #fff;
     width:10%;
     height:10%;
     display:block;
     position: absolute;
+    top: 0px;
     background-color:rgba(255,255,255,0.0);
 }
-#Image a:hover {
+#image-grid a:hover {
+    position: absolute;
+    top: 0px;
     background-color:rgba(255,255,255,0.3);
 }
 
