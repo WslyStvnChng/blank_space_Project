@@ -1,22 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "gangr33n",
-    "database": "blank_space_db",
+    "password": "root",
+    "database": "blank_space",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "root",
-    "database": "database_test",
+    "database": "blank_space_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "root",
-    "database": "database_production",
+    "database": "blank_space_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
