@@ -1,4 +1,16 @@
+<<<<<<< HEAD
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
+
+// Dependencies
+// =============================================================
+
+// Requiring our models
+var db = require("../models/db");
+=======
 var db = require("../models");
+>>>>>>> 2e9f3d2d6c16e93b414994cba0d3f02fc89fc51c
 
 module.exports = function(app) {
 
