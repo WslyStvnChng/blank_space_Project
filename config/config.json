@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "root",
+=======
+    "password": "gangr33n",
+>>>>>>> 1842d7050bece6cc5f9ecc6ff574e98c0b7e49dc
     "database": "blank_space_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
