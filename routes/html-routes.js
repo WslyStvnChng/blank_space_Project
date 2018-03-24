@@ -12,24 +12,29 @@ module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads main.html. This shouldne need to be fucked with MM/TK 7:29 3/21/18
+  // index route
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/main.html"));
+    res.render("index", {title: Express});
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  // contact route
+  app.get("/contact", function(req, res) {
+    res.render("index", {title: Express});
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  // about route
+  app.get("/about", function(req, res) {
+    res.render("about", {title: Express});
   });
 
-  // authors route loads author-manager.html
-  app.get("/authors", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/author-manager.html"));
+  // categories route
+  app.get("/categories", function(req, res) {
+    res.render("categories", {title: Express});
+  });
+
+  // contact route
+  app.get("/contact", function(req, res) {
+    res.render("index", {title: Express});
   });
 
 };
