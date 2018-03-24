@@ -46,3 +46,4 @@ console.log("Hi Mary");
        .height( $(document).height() )
        .width( $(document).width() );
 });
+
