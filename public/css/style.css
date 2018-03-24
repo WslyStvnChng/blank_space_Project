@@ -94,3 +94,42 @@ border: 2px solid lightgrey;
 body #results{
   background-color: green;
 }
+
+
+  #contactBox body{
+	width:100%;
+	height:100%;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+#contactBox h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+#contactBox p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+#contactBox a{
+	color:#26a5d3;
+}
+#contactBox a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contactBox #contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+#contactBox textarea.form-control{
+    height:100px;
+}
