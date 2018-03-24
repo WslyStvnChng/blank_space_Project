@@ -1,3 +1,10 @@
+//for steven: you could use handlebars here to load specific info
+//or get an ajax call to get info from server
+//request the tags for a specific image img/imgId
+//call to route, the method, the callback, inside there is where 
+//we would create the content for these popovers. 
+
+
 //Row A [1]
 $(document).ready(function() {
   // initialize popover with dynamic content
@@ -21,25 +28,6 @@ $(document).ready(function() {
 $("[data-toggle=popover-row-a]").on("shown.bs.popover", function() {
   $(".popover").css("middle", parseInt($(".popover").css("middle")) + -20 + "px");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Row B [2]
 $(document).ready(function() {
@@ -187,3 +175,30 @@ $("[data-toggle=popover-row-j]").on("shown.bs.popover", function() {
 
 
 
+
+
+//separation of concerns
+//array of objects (aka tags)
+// loop to go through our array of tags, and build the popovers for us
+
+// var tags = [{
+//   imageUrl: "google.jpg",
+//   associated location on grid: #imagelocation-D3,
+//   comment: "blahblah",
+//   link: "google.com"
+// }]
+
+
+// for(i = 0, i=tags.length(), i++){
+// $('[data-toggle="popover-row-a"]').popover({
+//   html: true,
+
+//   title: 'Username: <a class="close" href="#");">tags of [i].name</a>',
+
+//   comment:
+//     "<b>User1:</b>  tags[i].comment <br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
+//     "<hr><b>User3:</b>  What's gucci mean?",
+
+//   placement: "auto"
+// });
+// }
