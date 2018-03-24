@@ -31,7 +31,7 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new tag
-  app.tag("/api/tags", function(req, res) {
+  app.post("/api/tags", function(req, res) {
     db.Tag.create(req.body).then(function(dbTag) {
       res.json(dbTag);
     });
