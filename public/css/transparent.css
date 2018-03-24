@@ -1,9 +1,14 @@
 h1 {
     color: red;
 }
+
+
+
+
 #image-wrapper{
     position: relative;
 }
+
 #Image {
     /*inline doesnt respect height, but inline-block does!!!!*/
     position: relative;
