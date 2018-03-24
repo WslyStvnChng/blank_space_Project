@@ -5,10 +5,11 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+var express = require('express');
+var app = express.Router();
 
 // Routes
 // =============================================================
-module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
@@ -37,4 +38,4 @@ module.exports = function(app) {
     res.render("index", {title: Express});
   });
 
-};
+module.exports = app;

@@ -30,6 +30,8 @@ module.exports = function(app) {
     });
   });
 
+  // make a new get route for tags for comments
+
   // POST route for saving a new tag
   app.post("/api/tags", function(req, res) {
     db.Tag.create(req.body).then(function(dbTag) {

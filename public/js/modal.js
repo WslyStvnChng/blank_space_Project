@@ -3,7 +3,8 @@
 //request the tags for a specific image img/imgId
 //call to route, the method, the callback, inside there is where 
 //we would create the content for these popovers. 
-// var tags = require('../../../models/tags');
+// var tag = require('../models/tags.js');
+// console.log(tagging)
 
 
 //Row A [1]
@@ -12,15 +13,38 @@ $(document).ready(function() {
   $('[data-toggle="popover-row-a"]').popover({
     html: true,
     title: 'Username: <a class="close" href="#");">&times;</a>',
-    content:
-      "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
-      "<hr><b>User3:</b>  What's gucci mean?" +
-      "<form><input type='text'></input><button id='btn-post-button'>Post</button></form>",
+    content: function() {
+      let zoneId = $(this).data('zone-id');
+        $.ajax({
+          method: 'get',
+          url: `/api/tags-by-zone-id/${zoneId}`,
+        }).then((data) => {
+          console.log(data);
+        });
+    },
+      // "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
+      // "<hr><b>User3:</b>  What's gucci mean?" +
+      // //Dont forget to add id tag into input type
+      // "<form><input type='text' id='modal-input-field'></input><button id='btn-post-button'>Post</button></form>",
     placement: "auto"
     });
       $("[data-toggle=popover-row-a]").on("shown.bs.popover", function() {
+        //ajax api call
+        //grab id of 
+        
       $(".popover").css("middle", parseInt($(".popover").css("middle")) + -20 + "px");
     })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
