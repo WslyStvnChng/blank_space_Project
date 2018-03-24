@@ -7,16 +7,24 @@
 
 //Row A [1]
 $(document).ready(function() {
+  // initialize popover with dynamic content
   $('[data-toggle="popover-row-a"]').popover({
     html: true,
     title: 'Username: <a class="close" href="#");">&times;</a>',
     content:
       "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
-      "<hr><b>User3:</b>  What's gucci mean?",
-    placement: "auto"
+      "<hr><b>User3:</b>  What's gucci mean?" +
+      "<form><input type='text'></input><button id='btn-post-button'>Post</button></form>",
+    placement: "auto",
+    trigger: "manual"
   });
-});
 
+  $('btn-post-button').on("click", function() {
+    var random = this;
+      console.log(this);
+  })
+});
+// dismiss close button when clicked
 $("[data-toggle=popover-row-a]").on("shown.bs.popover", function() {
   $(".popover").css("middle", parseInt($(".popover").css("middle")) + -20 + "px");
 });
@@ -154,11 +162,11 @@ $(document).ready(function() {
   $('[data-toggle="popover-row-j"]').popover({
     html: true,
     title: 'Username: <a class="close" href="#");">&times;</a>',
+    placement: "auto",
     content:
       "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
       "<hr><b>User3:</b>  What's gucci mean?",
-    placement: "auto"
-  });
+   });
 });
 
 $("[data-toggle=popover-row-j]").on("shown.bs.popover", function() {
@@ -168,28 +176,29 @@ $("[data-toggle=popover-row-j]").on("shown.bs.popover", function() {
 
 
 
+
 //separation of concerns
 //array of objects (aka tags)
 // loop to go through our array of tags, and build the popovers for us
 
-/*var tags = [{
-  imageUrl: "google.jpg",
-  associated location on grid: #imagelocation-D3,
-  comment: "blahblah",
-  link: "google.com"
-}]
+// var tags = [{
+//   imageUrl: "google.jpg",
+//   associated location on grid: #imagelocation-D3,
+//   comment: "blahblah",
+//   link: "google.com"
+// }]
 
 
-for(i = 0, i=tags.length(), i++){
-$('[data-toggle="popover-row-a"]').popover({
-  html: true,
+// for(i = 0, i=tags.length(), i++){
+// $('[data-toggle="popover-row-a"]').popover({
+//   html: true,
 
-  title: 'Username: <a class="close" href="#");">tags of [i].name</a>',
+//   title: 'Username: <a class="close" href="#");">tags of [i].name</a>',
 
-  comment:
-    "<b>User1:</b>  tags[i].comment <br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
-    "<hr><b>User3:</b>  What's gucci mean?",
+//   comment:
+//     "<b>User1:</b>  tags[i].comment <br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
+//     "<hr><b>User3:</b>  What's gucci mean?",
 
-  placement: "auto"
-});
-}
+//   placement: "auto"
+// });
+// }
