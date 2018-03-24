@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var path = require("path");
+var express = require("express");
 
 // Routes
 // =============================================================
@@ -14,27 +14,28 @@ module.exports = function(app) {
 
   // index route
   app.get("/", function(req, res) {
-    res.render("index", {title: Express});
+    res.render("index", {title: express});
   });
 
   // contact route
   app.get("/contact", function(req, res) {
-    res.render("index", {title: Express});
+    res.render("contact", {title: express});
   });
 
   // about route
   app.get("/about", function(req, res) {
-    res.render("about", {title: Express});
+    res.render("about", {title: express});
   });
 
   // categories route
   app.get("/categories", function(req, res) {
-    res.render("categories", {title: Express});
+    res.render("categories", {title: express});
   });
 
-  // contact route
-  app.get("/contact", function(req, res) {
-    res.render("index", {title: Express});
+  // categories route
+  app.get("/upload", function(req, res) {
+    res.render("upload", {title: express});
   });
+
 
 };
