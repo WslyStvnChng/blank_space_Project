@@ -12,9 +12,9 @@ module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads view.html
+  // index route loads main.html. This shouldne need to be fucked with MM/TK 7:29 3/21/18
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+    res.sendFile(path.join(__dirname, "../public/main.html"));
   });
 
   // cms route loads cms.html

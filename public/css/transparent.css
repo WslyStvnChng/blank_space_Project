@@ -1,444 +1,562 @@
 h1 {
-   color: red; 
+    color: red;
+}
+#image-wrapper{
+    position: relative;
+}
+#Image {
+    /*inline doesnt respect height, but inline-block does!!!!*/
+    position: relative;
+    display: inline-block;
 }
 
-#Image {
+/*#Image {
     background-image: url(http://farm9.staticflickr.com/8370/8366240991_45a728b522_z.jpg);
     width: 640px;
     height: 457px;
-    position:relative;
-}
+    position: relative;
+}*/
+
 #Image a {
-    border:1px solid #fff;
-    width:10%;
-    height:10%;
-    display:block;
-    position:absolute;
-    background-color:rgba(255,255,255,0.0);
+    border: 1px solid #fff;
+    width: 10%;
+    height: 10%;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.0);
 }
+
 #Image a:hover {
-    background-color:rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
+
 
 /* first level, row A */
-#Image_zone1a{
-    top:0%;
-    left:0%;
+
+#Image_zone1a {
+    top: 0%;
+    left: 0%;
 }
-#Image_zone2a{
-    top:0%;
-    left:10%;
+
+#Image_zone2a {
+    top: 0%;
+    left: 10%;
 }
-#Image_zone3a{
-    top:0%;
-    left:20%;
+
+#Image_zone3a {
+    top: 0%;
+    left: 20%;
 }
-#Image_zone4a{
-    top:0%;
-    left:30%;
+
+#Image_zone4a {
+    top: 0%;
+    left: 30%;
 }
-#Image_zone5a{
-    top:0%;
-    left:40%;
+
+#Image_zone5a {
+    top: 0%;
+    left: 40%;
 }
-#Image_zone6a{
-    top:0%;
-    left:50%;
+
+#Image_zone6a {
+    top: 0%;
+    left: 50%;
 }
-#Image_zone7a{
-    top:0%;
-    left:60%;
+
+#Image_zone7a {
+    top: 0%;
+    left: 60%;
 }
-#Image_zone8a{
-    top:0%;
-    left:70%;
+
+#Image_zone8a {
+    top: 0%;
+    left: 70%;
 }
-#Image_zone9a{
-    top:0%;
-    left:80%;
+
+#Image_zone9a {
+    top: 0%;
+    left: 80%;
 }
-#Image_zone10a{
-    top:0%;
-    left:90%;
+
+#Image_zone10a {
+    top: 0%;
+    left: 90%;
 }
+
 
 /* row B */
-#Image_zone1b{
-    top:10%;
-    left:0%;
+
+#Image_zone1b {
+    top: 10%;
+    left: 0%;
 }
-#Image_zone2b{
-    top:10%;
-    left:10%;
+
+#Image_zone2b {
+    top: 10%;
+    left: 10%;
 }
-#Image_zone3b{
-    top:10%;
-    left:20%;
+
+#Image_zone3b {
+    top: 10%;
+    left: 20%;
 }
-#Image_zone4b{
-    top:10%;
-    left:30%;
+
+#Image_zone4b {
+    top: 10%;
+    left: 30%;
 }
-#Image_zone5b{
-    top:10%;
-    left:40%;
+
+#Image_zone5b {
+    top: 10%;
+    left: 40%;
 }
-#Image_zone6b{
-    top:10%;
-    left:50%;
+
+#Image_zone6b {
+    top: 10%;
+    left: 50%;
 }
-#Image_zone7b{
-    top:10%;
-    left:60%;
+
+#Image_zone7b {
+    top: 10%;
+    left: 60%;
 }
-#Image_zone8b{
-    top:10%;
-    left:70%;
+
+#Image_zone8b {
+    top: 10%;
+    left: 70%;
 }
-#Image_zone9b{
-    top:10%;
-    left:80%;
+
+#Image_zone9b {
+    top: 10%;
+    left: 80%;
 }
-#Image_zone10b{
-    top:10%;
-    left:90%;
+
+#Image_zone10b {
+    top: 10%;
+    left: 90%;
 }
+
 
 /* row C */
-#Image_zone1c{
-    top:20%;
-    left:0%;
+
+#Image_zone1c {
+    top: 20%;
+    left: 0%;
 }
-#Image_zone2c{
-    top:20%;
-    left:10%;
+
+#Image_zone2c {
+    top: 20%;
+    left: 10%;
 }
-#Image_zone3c{
-    top:20%;
-    left:20%;
+
+#Image_zone3c {
+    top: 20%;
+    left: 20%;
 }
-#Image_zone4c{
-    top:20%;
-    left:30%;
+
+#Image_zone4c {
+    top: 20%;
+    left: 30%;
 }
-#Image_zone5c{
-    top:20%;
-    left:40%;
+
+#Image_zone5c {
+    top: 20%;
+    left: 40%;
 }
-#Image_zone6c{
-    top:20%;
-    left:50%;
+
+#Image_zone6c {
+    top: 20%;
+    left: 50%;
 }
-#Image_zone7c{
-    top:20%;
-    left:60%;
+
+#Image_zone7c {
+    top: 20%;
+    left: 60%;
 }
-#Image_zone8c{
-    top:20%;
-    left:70%;
+
+#Image_zone8c {
+    top: 20%;
+    left: 70%;
 }
-#Image_zone9c{
-    top:20%;
-    left:80%;
+
+#Image_zone9c {
+    top: 20%;
+    left: 80%;
 }
-#Image_zone10c{
-    top:20%;
-    left:90%;
+
+#Image_zone10c {
+    top: 20%;
+    left: 90%;
 }
+
 
 /* row D */
-#Image_zone1d{
-    top:30%;
-    left:0%;
+
+#Image_zone1d {
+    top: 30%;
+    left: 0%;
 }
-#Image_zone2d{
-    top:30%;
-    left:10%;
+
+#Image_zone2d {
+    top: 30%;
+    left: 10%;
 }
-#Image_zone3d{
-    top:30%;
-    left:20%;
+
+#Image_zone3d {
+    top: 30%;
+    left: 20%;
 }
-#Image_zone4d{
-    top:30%;
-    left:30%;
+
+#Image_zone4d {
+    top: 30%;
+    left: 30%;
 }
-#Image_zone5d{
-    top:30%;
-    left:40%;
+
+#Image_zone5d {
+    top: 30%;
+    left: 40%;
 }
-#Image_zone6d{
-    top:30%;
-    left:50%;
+
+#Image_zone6d {
+    top: 30%;
+    left: 50%;
 }
-#Image_zone7d{
-    top:30%;
-    left:60%;
+
+#Image_zone7d {
+    top: 30%;
+    left: 60%;
 }
-#Image_zone8d{
-    top:30%;
-    left:70%;
+
+#Image_zone8d {
+    top: 30%;
+    left: 70%;
 }
-#Image_zone9d{
-    top:30%;
-    left:80%;
+
+#Image_zone9d {
+    top: 30%;
+    left: 80%;
 }
-#Image_zone10d{
-    top:30%;
-    left:90%;
+
+#Image_zone10d {
+    top: 30%;
+    left: 90%;
 }
+
 
 /* row E */
-#Image_zone1e{
-    top:40%;
-    left:0%;
+
+#Image_zone1e {
+    top: 40%;
+    left: 0%;
 }
-#Image_zone2e{
-    top:40%;
-    left:10%;
+
+#Image_zone2e {
+    top: 40%;
+    left: 10%;
 }
-#Image_zone3e{
-    top:40%;
-    left:20%;
+
+#Image_zone3e {
+    top: 40%;
+    left: 20%;
 }
-#Image_zone4e{
-    top:40%;
-    left:30%;
+
+#Image_zone4e {
+    top: 40%;
+    left: 30%;
 }
-#Image_zone5e{
-    top:40%;
-    left:40%;
+
+#Image_zone5e {
+    top: 40%;
+    left: 40%;
 }
-#Image_zone6e{
-    top:40%;
-    left:50%;
+
+#Image_zone6e {
+    top: 40%;
+    left: 50%;
 }
-#Image_zone7e{
-    top:40%;
-    left:60%;
+
+#Image_zone7e {
+    top: 40%;
+    left: 60%;
 }
-#Image_zone8e{
-    top:40%;
-    left:70%;
+
+#Image_zone8e {
+    top: 40%;
+    left: 70%;
 }
-#Image_zone9e{
-    top:40%;
-    left:80%;
+
+#Image_zone9e {
+    top: 40%;
+    left: 80%;
 }
-#Image_zone10e{
-    top:40%;
-    left:90%;
+
+#Image_zone10e {
+    top: 40%;
+    left: 90%;
 }
+
 
 /* row F */
-#Image_zone1f{
-    top:50%;
-    left:0%;
+
+#Image_zone1f {
+    top: 50%;
+    left: 0%;
 }
-#Image_zone2f{
-    top:50%;
-    left:10%;
+
+#Image_zone2f {
+    top: 50%;
+    left: 10%;
 }
-#Image_zone3f{
-    top:50%;
-    left:20%;
+
+#Image_zone3f {
+    top: 50%;
+    left: 20%;
 }
-#Image_zone4f{
-    top:50%;
-    left:30%;
+
+#Image_zone4f {
+    top: 50%;
+    left: 30%;
 }
-#Image_zone5f{
-    top:50%;
-    left:40%;
+
+#Image_zone5f {
+    top: 50%;
+    left: 40%;
 }
-#Image_zone6f{
-    top:50%;
-    left:50%;
+
+#Image_zone6f {
+    top: 50%;
+    left: 50%;
 }
-#Image_zone7f{
-    top:50%;
-    left:60%;
+
+#Image_zone7f {
+    top: 50%;
+    left: 60%;
 }
-#Image_zone8f{
-    top:50%;
-    left:70%;
+
+#Image_zone8f {
+    top: 50%;
+    left: 70%;
 }
-#Image_zone9f{
-    top:50%;
-    left:80%;
+
+#Image_zone9f {
+    top: 50%;
+    left: 80%;
 }
-#Image_zone10f{
-    top:50%;
-    left:90%;
+
+#Image_zone10f {
+    top: 50%;
+    left: 90%;
 }
+
 
 /* row G */
-#Image_zone1g{
-    top:60%;
-    left:0%;
+
+#Image_zone1g {
+    top: 60%;
+    left: 0%;
 }
-#Image_zone2g{
-    top:60%;
-    left:10%;
+
+#Image_zone2g {
+    top: 60%;
+    left: 10%;
 }
-#Image_zone3g{
-    top:60%;
-    left:20%;
+
+#Image_zone3g {
+    top: 60%;
+    left: 20%;
 }
-#Image_zone4g{
-    top:60%;
-    left:30%;
+
+#Image_zone4g {
+    top: 60%;
+    left: 30%;
 }
-#Image_zone5g{
-    top:60%;
-    left:40%;
+
+#Image_zone5g {
+    top: 60%;
+    left: 40%;
 }
-#Image_zone6g{
-    top:60%;
-    left:50%;
+
+#Image_zone6g {
+    top: 60%;
+    left: 50%;
 }
-#Image_zone7g{
-    top:60%;
-    left:60%;
+
+#Image_zone7g {
+    top: 60%;
+    left: 60%;
 }
-#Image_zone8g{
-    top:60%;
-    left:70%;
+
+#Image_zone8g {
+    top: 60%;
+    left: 70%;
 }
-#Image_zone9g{
-    top:60%;
-    left:80%;
+
+#Image_zone9g {
+    top: 60%;
+    left: 80%;
 }
-#Image_zone10g{
-    top:60%;
-    left:90%;
+
+#Image_zone10g {
+    top: 60%;
+    left: 90%;
 }
+
 
 /* row H */
-#Image_zone1h{
-    top:70%;
-    left:0%;
+
+#Image_zone1h {
+    top: 70%;
+    left: 0%;
 }
-#Image_zone2h{
-    top:70%;
-    left:10%;
+
+#Image_zone2h {
+    top: 70%;
+    left: 10%;
 }
-#Image_zone3h{
-    top:70%;
-    left:20%;
+
+#Image_zone3h {
+    top: 70%;
+    left: 20%;
 }
-#Image_zone4h{
-    top:70%;
-    left:30%;
+
+#Image_zone4h {
+    top: 70%;
+    left: 30%;
 }
-#Image_zone5h{
-    top:70%;
-    left:40%;
+
+#Image_zone5h {
+    top: 70%;
+    left: 40%;
 }
-#Image_zone6h{
-    top:70%;
-    left:50%;
+
+#Image_zone6h {
+    top: 70%;
+    left: 50%;
 }
-#Image_zone7h{
-    top:70%;
-    left:60%;
+
+#Image_zone7h {
+    top: 70%;
+    left: 60%;
 }
-#Image_zone8h{
-    top:70%;
-    left:70%;
+
+#Image_zone8h {
+    top: 70%;
+    left: 70%;
 }
-#Image_zone9h{
-    top:70%;
-    left:80%;
+
+#Image_zone9h {
+    top: 70%;
+    left: 80%;
 }
-#Image_zone10h{
-    top:70%;
-    left:90%;
+
+#Image_zone10h {
+    top: 70%;
+    left: 90%;
 }
+
 
 /* row I */
-#Image_zone1i{
-    top:80%;
-    left:0%;
+
+#Image_zone1i {
+    top: 80%;
+    left: 0%;
 }
-#Image_zone2i{
-    top:80%;
-    left:10%;
+
+#Image_zone2i {
+    top: 80%;
+    left: 10%;
 }
-#Image_zone3i{
-    top:80%;
-    left:20%;
+
+#Image_zone3i {
+    top: 80%;
+    left: 20%;
 }
-#Image_zone4i{
-    top:80%;
-    left:30%;
+
+#Image_zone4i {
+    top: 80%;
+    left: 30%;
 }
-#Image_zone5i{
-    top:80%;
-    left:40%;
+
+#Image_zone5i {
+    top: 80%;
+    left: 40%;
 }
-#Image_zone6i{
-    top:80%;
-    left:50%;
+
+#Image_zone6i {
+    top: 80%;
+    left: 50%;
 }
-#Image_zone7i{
-    top:80%;
-    left:60%;
+
+#Image_zone7i {
+    top: 80%;
+    left: 60%;
 }
-#Image_zone8i{
-    top:80%;
-    left:70%;
+
+#Image_zone8i {
+    top: 80%;
+    left: 70%;
 }
-#Image_zone9i{
-    top:80%;
-    left:80%;
+
+#Image_zone9i {
+    top: 80%;
+    left: 80%;
 }
-#Image_zone10i{
-    top:80%;
-    left:90%;
+
+#Image_zone10i {
+    top: 80%;
+    left: 90%;
 }
+
 
 /* row J */
-#Image_zone1j{
-    top:90%;
-    left:0%;
-}
-#Image_zone2j{
-    top:90%;
-    left:10%;
-}
-#Image_zone3j{
-    top:90%;
-    left:20%;
-}
-#Image_zone4j{
-    top:90%;
-    left:30%;
-}
-#Image_zone5j{
-    top:90%;
-    left:40%;
-}
-#Image_zone6j{
-    top:90%;
-    left:50%;
-}
-#Image_zone7j{
-    top:90%;
-    left:60%;
-}
-#Image_zone8j{
-    top:90%;
-    left:70%;
-}
-#Image_zone9j{
-    top:90%;
-    left:80%;
-}
-#Image_zone10j{
-    top:90%;
-    left:90%;
+
+#Image_zone1j {
+    top: 90%;
+    left: 0%;
 }
 
+#Image_zone2j {
+    top: 90%;
+    left: 10%;
+}
 
+#Image_zone3j {
+    top: 90%;
+    left: 20%;
+}
+
+#Image_zone4j {
+    top: 90%;
+    left: 30%;
+}
+
+#Image_zone5j {
+    top: 90%;
+    left: 40%;
+}
+
+#Image_zone6j {
+    top: 90%;
+    left: 50%;
+}
+
+#Image_zone7j {
+    top: 90%;
+    left: 60%;
+}
+
+#Image_zone8j {
+    top: 90%;
+    left: 70%;
+}
+
+#Image_zone9j {
+    top: 90%;
+    left: 80%;
+}
+
+#Image_zone10j {
+    top: 90%;
+    left: 90%;
+}
 

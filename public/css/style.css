@@ -57,6 +57,12 @@ font-size: 20px;
   -o-background-size: cover;*/
 }
 
+.img-thumbnail{
+  width: 255px;
+  height: 173.03px;
+}
+
+
 .navbar-brand, .nav-link{
   font-family: 'Share Tech', sans-serif;
   font-size: 20px;
