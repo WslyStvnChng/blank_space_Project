@@ -4,42 +4,18 @@ h1 {
 #image-wrapper{
     position: relative;
 }
-/*#Image {
-    background-image: url(https://i.imgur.com/qIH8fTw.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 450px;
-    height: 350px;
-    position: relative;
-}*/
-
-<<<<<<< HEAD
-#image-background{
-    width: 80%;
-    height: 60%;
-}
-#image-grid a {
-    position: absolute;
-    border:1px solid #fff;
-    width:10%;
-    height:10%;
-    display:block;
-    position: absolute;
-    top: 0px;
-    background-color:rgba(255,255,255,0.0);
-}
-#image-grid a:hover {
-    position: absolute;
-    top: 0px;
-    background-color:rgba(255,255,255,0.3);
-=======
 #Image {
+    /*inline doesnt respect height, but inline-block does!!!!*/
+    position: relative;
+    display: inline-block;
+}
+
+/*#Image {
     background-image: url(http://farm9.staticflickr.com/8370/8366240991_45a728b522_z.jpg);
     width: 640px;
     height: 457px;
     position: relative;
-}
+}*/
 
 #Image a {
     border: 1px solid #fff;
@@ -52,7 +28,6 @@ h1 {
 
 #Image a:hover {
     background-color: rgba(255, 255, 255, 0.3);
->>>>>>> a02b554e613ac31c34b4442220618ae486e937fa
 }
 
 
