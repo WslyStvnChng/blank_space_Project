@@ -19,7 +19,7 @@ module.exports = function(app) {
 
   // contact route
   app.get("/contact", function(req, res) {
-    res.render("index", {title: express});
+    res.render("contact", {title: express});
   });
 
   // about route
@@ -32,9 +32,10 @@ module.exports = function(app) {
     res.render("categories", {title: express});
   });
 
-  // contact route
-  app.get("/contact", function(req, res) {
-    res.render("index", {title: express});
+  // categories route
+  app.get("/upload", function(req, res) {
+    res.render("upload", {title: express});
   });
+
 
 };
