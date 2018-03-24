@@ -42,7 +42,7 @@ module.exports = function(app) {
     db.Tag.destroy({
       where: {
         id: req.params.id
-      }
+      },
     }).then(function(dbTag) {
       res.json(dbTag);
     });
