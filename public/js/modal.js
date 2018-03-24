@@ -14,7 +14,7 @@ $(document).ready(function() {
     html: true,
     title: 'Username: <a class="close" href="#");">&times;</a>',
     content: function() {
-      let zoneId = $(this).data('zone-id');
+      let zoneId1a = $(this).data('zone-id1a');
         $.ajax({
           method: 'get',
           url: `/api/tags-by-zone-id/${zoneId}`,
