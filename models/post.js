@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     },
 
-    link: {
+    imgURL: {
       type: DataTypes.STRING,
       allowNull: false,
        validate: {
@@ -36,5 +36,8 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
   };
+    Post.associate = function(models) {
+      Post.hasMany(models.Tag, { onDelete: "cascade" });
+    };
   return Post;
 };
