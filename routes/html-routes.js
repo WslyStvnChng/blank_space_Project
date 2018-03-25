@@ -35,6 +35,9 @@ module.exports = function(app) {
   // categories route
   app.get("/upload", function(req, res) {
     res.render("upload", {title: express});
+
+    
+
   });
 
 
