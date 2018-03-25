@@ -19,7 +19,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="title">Image Title</label>  
+  <label class="col-md-4 control-label" for="title">Title</label>  
   <div class="col-md-4">
   <input id="title" name="title" type="text" placeholder="Name Your Image" class="form-control input-md" required="">
   <span class="help-block">Please name your image</span>  
@@ -32,6 +32,25 @@
   <div class="col-md-5">
   <input id="link" name="link" type="text" placeholder="" class="form-control input-md" required="">
   <span class="help-block">please place your image link here</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nsfw">Safe for Work?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="nsfw-0">
+      <input type="radio" name="nsfw" id="nsfw-0" value="NSFW" checked="checked">
+      nsfw
+    </label>
+	</div>
+  <div class="radio">
+    <label for="nsfw-1">
+      <input type="radio" name="nsfw" id="nsfw-1" value="Safe for Work">
+      safe_for_work
+    </label>
+	</div>
   </div>
 </div>
 

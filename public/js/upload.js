@@ -1,4 +1,4 @@
-window.URL = window.URL || window.webkitURL;
+/**window.URL = window.URL || window.webkitURL;
 
 var fileSelect = document.getElementById("fileSelect"),
   fileElem = document.getElementById("fileElem"),
@@ -38,4 +38,24 @@ function handleFiles(files) {
       li.appendChild(info);
     }
   }
-}
+}**/
+
+var title = $('#title').val().trim();
+var username = $('#textinput').val().trim();
+var link = $('#link').val().trim();
+
+$(function() {
+  //submit button, and post to api. 
+  $("#linkBtn").on("click", function(event) {
+
+    $.ajax("/api/posts", {
+      type: "POST",
+      data: newPost
+    }).then(
+      function() {
+        console.log("created new post");
+        // Reload the page to get the updated list
+        location.reload();
+    });
+  });
+});
