@@ -10,32 +10,42 @@
 //Row A [1]
 $(document).ready(function() {
 
-  $('[data-toggle="popover-row-a"]').popover({
-    html: true,
-    title: 'Username: <a class="close" href="#");">&times;</a>',
-    content: function() {
-      let zoneId1a = $(this).data('zone-id1a');
-        $.ajax({
-          method: 'get',
-          url: `/api/tags-by-zone-id/${zoneId}`,
-        }).then((data) => {
-          console.log(data);
-        });
-    },
-      // "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
-      // "<hr><b>User3:</b>  What's gucci mean?" +
-      // //Dont forget to add id tag into input type
-      // "<form><input type='text' id='modal-input-field'></input><button id='btn-post-button'>Post</button></form>",
-    placement: "auto"
-    });
-      $("[data-toggle=popover-row-a]").on("shown.bs.popover", function() {
-        //ajax api call
-        //grab id of 
+  // $('[data-toggle="popover-row-a"]').popover({
+  //   html: true,
+  //   title: 'Username: <a class="close" href="#");">&times;</a>',
+  //   content: function() {
+  //     let zoneId1a = $(this).data('zone-id1a');
+  //       $.ajax({
+  //         method: 'get',
+  //         url: `/api/tags-by-zone-id/${zoneId}`,
+  //       }).then((data) => {
+  //         console.log(data);
+  //       });
+  //   },
+  //     // "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
+  //     // "<hr><b>User3:</b>  What's gucci mean?" +
+  //     // //Dont forget to add id tag into input type
+  //     // "<form><input type='text' id='modal-input-field'></input><button id='btn-post-button'>Post</button></form>",
+  //   placement: "auto"
+  //   });
+  //     $("[data-toggle=popover-row-a]").on("shown.bs.popover", function() {
+  //       //ajax api call
+  //       //grab id of 
         
-      $(".popover").css("middle", parseInt($(".popover").css("middle")) + -20 + "px");
-    })
+  //     $(".popover").css("middle", parseInt($(".popover").css("middle")) + -20 + "px");
+  //   })
 
-
+ $('[data-toggle="popover-row-a"]')
+   .popover({ html: true, trigger: "manual", content: function() {
+       return $.ajax({
+         url: "/api/tags/",
+         dataType: "html",
+         async: false
+       }).responseText;
+     } })
+   .click(function(e) {
+     $(this).popover("toggle");
+   });
 
 
 

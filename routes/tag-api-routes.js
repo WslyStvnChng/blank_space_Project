@@ -8,7 +8,7 @@ module.exports = function(app) {
     if (req.query.user_id) {
       query.UserId = req.query.user_id;
     }
-    
+
     // Get route for finding all tags
     db.Tag.findAll({
       where: query,

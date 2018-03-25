@@ -17,7 +17,16 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false
-    }
+    },
+
+    imgURL: {
+      type: DataTypes.STRING,
+      allowNull: false,
+       validate: {
+         len: [1]
+       }
+    },
+
   });
 
   Post.associate = function(models) {
