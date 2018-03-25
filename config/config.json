@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "*Dirty4Halo",
+    "password": "gangr33n",
     "database": "blank_space_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "*Dirty4Halo",
+    "password": "",
     "database": "blank_space_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "*Dirty4Halo",
+    "password": "",
     "database": "blank_space_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
