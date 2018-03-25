@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     },
 
-    imgURL: {
+    link: {
       type: DataTypes.STRING,
       allowNull: false,
        validate: {

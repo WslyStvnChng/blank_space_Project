@@ -40,14 +40,22 @@ function handleFiles(files) {
   }
 }**/
 
-var title = $('#title').val().trim();
-var username = $('#textinput').val().trim();
-var link = $('#link').val().trim();
+
+//hold until the handlers are loaded 
 
 $(function() {
-  //submit button, and post to api. 
-  $("#linkBtn").on("click", function(event) {
+   $("#linkBtn").on("click", function(event) {
 
+    event.preventDefault();
+
+    //new object that collects the Post data
+    var newPost = {
+      title : $('#title').val().trim(),
+      username : $('#textinput').val().trim(),
+      link : $('#link').val().trim(),
+    };
+
+    // Send the POST request.
     $.ajax("/api/posts", {
       type: "POST",
       data: newPost
@@ -56,6 +64,9 @@ $(function() {
         console.log("created new post");
         // Reload the page to get the updated list
         location.reload();
-    });
+      }
+    );
+
+
   });
 });
