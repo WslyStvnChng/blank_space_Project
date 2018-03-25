@@ -36,9 +36,12 @@ module.exports = function(app) {
   app.get("/upload", function(req, res) {
     res.render("upload", {title: express});
 
-    
-
   });
 
+ //  app.get("/index", function(req, imageURL) {
+ //  imgURL.selectAll(function(data) {
+ //  res.render("index", { blank_space_data: data });
+ //  });
+ // });
 
 };
