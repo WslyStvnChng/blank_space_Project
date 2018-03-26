@@ -38,8 +38,13 @@ module.exports = function(app) {
 
   });
 
-   app.get("/index", function(req, res) {
-   res.render("index", {title: express });
+  app.get("/index", function(req, res) {
+    res.render("index", {title: express});
+  
+  });
+
+  app.get("/image", function(req, res) {
+    res.render("image", {title: express});
    
   });
 
