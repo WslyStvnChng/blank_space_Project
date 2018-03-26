@@ -4,32 +4,54 @@
 
 // Dependencies
 // =============================================================
-var path = require("path");
+var express = require("express");
+var db = require("../models");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
 
-  // Each of the below routes just handles the HTML page that the user gets sent to.
+  // each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads main.html. This shouldne need to be fucked with MM/TK 7:29 3/21/18
+  // index route
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/main.html"));
+    res.render("index", {title: express});
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  // contact route
+  app.get("/contact", function(req, res) {
+    res.render("contact", {title: express});
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  // about route
+  app.get("/about", function(req, res) {
+    res.render("about", {title: express});
   });
 
-  // authors route loads author-manager.html
-  app.get("/authors", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/author-manager.html"));
+  // categories route
+  app.get("/categories", function(req, res) {
+    res.render("categories", {title: express});
   });
+
+  // categories route
+  app.get("/upload", function(req, res) {
+    res.render("upload", {title: express});
+
+  });
+
+ app.get("/index", function(req, res) {
+    db.Post.findAll()
+      .then(function(retImages){
+              return res.render("index", { images : retImages });
+      });
+    
+  }); 
+  //we need to get images out of database. eash has to have specific id
+  //render depending on what it returns us
+
+ app.get("/image", function(req, res) {
+   res.render("image", { title: express });
+ });
+  
 
 };

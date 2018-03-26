@@ -30,8 +30,8 @@
         color: #ffa000;
     }
 
-    #verify h2{
-      font-family: font-family: 'Share Tech', sans-serif;
+    #verify h2 {
+      font-family: 'Share Tech', sans-serif;
       font-size: 25px;
       color: #ffa000;
     }
@@ -132,4 +132,8 @@ body #results{
 
 #contactBox textarea.form-control{
     height:100px;
+}
+
+nav {
+  margin-bottom: 40px;
 }

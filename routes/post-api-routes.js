@@ -8,7 +8,7 @@ module.exports = function(app) {
     if (req.query.user_id) {
       query.UserId = req.query.user_id;
     }
-    
+
     // Get route for finding all posts
     db.Post.findAll({
       where: query,
@@ -32,6 +32,8 @@ module.exports = function(app) {
 
   // POST route for saving a new post
   app.post("/api/posts", function(req, res) {
+    console.log("got to the back end!!")
+    console.log(req.body);
     db.Post.create(req.body).then(function(dbPost) {
       res.json(dbPost);
     });

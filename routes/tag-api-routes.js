@@ -8,7 +8,7 @@ module.exports = function(app) {
     if (req.query.user_id) {
       query.UserId = req.query.user_id;
     }
-    
+
     // Get route for finding all tags
     db.Tag.findAll({
       where: query,
@@ -30,8 +30,19 @@ module.exports = function(app) {
     });
   });
 
+// Possible handle bar route to add? Maybe not...
+  // app.get("/???", function(req, res) {
+  //   // express callback response by calling burger.selectAllBurger
+  //   burger.all(function(blank_space_data) {
+  //     // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
+  //     res.render("index", { blank_space_data: blank_space_data });
+  //   });
+  // });
+
+
+
   // POST route for saving a new tag
-  app.tag("/api/tags", function(req, res) {
+  app.post("/api/tags", function(req, res) {
     db.Tag.create(req.body).then(function(dbTag) {
       res.json(dbTag);
     });
@@ -42,7 +53,7 @@ module.exports = function(app) {
     db.Tag.destroy({
       where: {
         id: req.params.id
-      }
+      },
     }).then(function(dbTag) {
       res.json(dbTag);
     });
