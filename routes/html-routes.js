@@ -39,12 +39,11 @@ module.exports = function(app) {
 
   });
 
- app.get("/index", function(req, res) {
+  app.get("/index", function(req, res) {
     db.Post.findAll()
       .then(function(retImages){
               return res.render("index", { images : retImages });
       });
-    
   }); 
   //we need to get images out of database. eash has to have specific id
   //render depending on what it returns us
