@@ -12,11 +12,11 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  User.associate = function(models) {
+  /*User.associate = function(models) {
     User.hasMany(models.Post, {
       onDelete: "cascade"
     });
-  };
+  };*/
   return User;
 };
 

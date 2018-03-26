@@ -133,3 +133,7 @@ body #results{
 #contactBox textarea.form-control{
     height:100px;
 }
+
+nav {
+  margin-bottom: 40px;
+}
