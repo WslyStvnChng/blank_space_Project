@@ -11,10 +11,10 @@ $(document).ready(function() {
 
   $('[data-toggle="popover-row-a"]').popover({
     html: true,
-    title: 'Username: <a class="close" href="#");">&times;</a>',
+    title: 'Title: <a class="close" href="#");">&times;</a>',
     content:
-      "<b>User1:</b>  You gucci my dude?<br><hr><br><b>User2:</b>  I'm gucci bro, what's up<br><hr><br>" +
-      "<hr><b>User3:</b>  What's gucci mean?" +
+      "<b>User1:</b> Lions Back, Moab!<br><hr><br><b>User2:</b>  How high is that?<br><hr><br>" +
+      "<hr><b>User3:</b> Looks STEEP!" +
       "<form><input type='text'></input><button id='btn-post-button'>Post</button></form>",
     placement: "auto"
     });
