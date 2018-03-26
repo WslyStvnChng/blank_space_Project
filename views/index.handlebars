@@ -80,7 +80,17 @@
 
   <div class="row text-center text-lg-left">
 
-    <div class="col-lg-3 col-md-4 col-xs-6">
+       {{#each images}}
+        <div class="col-lg-3 col-md-4 col-xs-6">
+              <a href="#" class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail"
+                data-id= "{{this.id}}"
+                src="{{this.link}}" alt="">
+              </a>
+            </div>
+        {{/each}}
+
+    <!--div class="col-lg-3 col-md-4 col-xs-6">
       <a href="#" class="d-block mb-4 h-100">
         {{#each blank_space_data}}
        {{#unless this.nsfw}}
@@ -201,6 +211,6 @@
          {{/each}}
       </a>
     </div>
-  </div>
+  </div-->
 
 </div>

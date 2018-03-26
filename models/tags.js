@@ -21,13 +21,13 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Tag.associate = function(models) {
+  /*Tag.associate = function(models) {
     Tag.belongsTo(models.Post, {
       foreignKey: {
         allowNull: false
       }
     });
-  };
+  };*/
 
   return Tag;
 };

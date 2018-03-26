@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     },
 
-    imgURL: {
+    link: {
       type: DataTypes.STRING,
       allowNull: false,
        validate: {
@@ -29,15 +29,15 @@ module.exports = function(sequelize, DataTypes) {
 
   });
 
-  Post.associate = function(models) {
+ /* Post.associate = function(models) {
     Post.belongsTo(models.User, {
       foreignKey: {
-        allowNull: false
+      //  allowNull: false
       }
     });
   };
     Post.associate = function(models) {
       Post.hasMany(models.Tag, { onDelete: "cascade" });
-    };
+    };*/
   return Post;
 };
