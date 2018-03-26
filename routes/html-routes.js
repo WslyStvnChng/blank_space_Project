@@ -38,10 +38,9 @@ module.exports = function(app) {
 
   });
 
- //  app.get("/index", function(req, imageURL) {
- //  imgURL.selectAll(function(data) {
- //  res.render("index", { blank_space_data: data });
- //  });
- // });
+   app.get("/index", function(req, res) {
+   res.render("index", {title: express });
+   
+  });
 
 };
