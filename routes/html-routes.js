@@ -49,9 +49,15 @@ module.exports = function(app) {
   //we need to get images out of database. eash has to have specific id
   //render depending on what it returns us
 
- app.get("/image", function(req, res) {
-   res.render("image", { title: express });
- });
-  
-
+ app.get("/images/:id", function(req,res) {
+   db.Post.findOne({ where: {
+    id: req.params.id
+   } }).then(
+     function(data) {
+       res.render('image', { link: data.link,
+        id: data.id
+      });
+     }
+   )
+ })
 };
