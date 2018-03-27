@@ -9,10 +9,12 @@ h1 {
     position: relative;
 }
 
+
 #Image {
     /*inline doesnt respect height, but inline-block does!!!!*/
     position: relative;
     display: inline-block;
+
 }
 
 /*#Image {
